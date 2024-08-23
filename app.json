@@ -12,7 +12,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sebnun.testav"
     },
     "android": {
       "adaptiveIcon": {
@@ -22,6 +23,19 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "$(PRODUCT_NAME) needs access to your microphone."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f42f46d8-8d0b-4969-b719-e7bb7230f16b"
+      }
     }
   }
 }
